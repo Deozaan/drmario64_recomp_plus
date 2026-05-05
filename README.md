@@ -1,4 +1,4 @@
-# drmario64_recomp_plus
+# DrMario64Recompiled
 
 
 ## Overview
@@ -46,29 +46,6 @@ smoother motion, and quality-of-life enhancements while remaining faithful to th
 
 ## Build
 
-The listed commits below are known-good and able to build this repository.
+For Windows builds, Visual Studio is required. Refer to the Zelda recomp repository for Windows setup guidance.
 
-These instructions target Linux.  
-For Windows builds, Visual Studio is required. Refer to the Zelda recomp repository
-for Windows setup guidance.
-
-- Clone with submodules:
-  - `git clone --recurse-submodules`
-  - or `git submodule update --init --recursive`
-
-- Follow the decomp setup instructions up to and including `make setup`  
-  (<https://github.com/AngheloAlf/drmario64>, commit `91dab37987bdad4d100958685cc10a011d4917dd`)
-  - Copy the generated `baserom_uncompressed.us.z64` from the decomp root
-  - Place it in this project’s root and rename it to:
-    `drmario64_uncompressed.us.z64`
-
-- Build N64Recomp  
-  (<https://github.com/Mr-Wiseguy/N64Recomp>, commit `a13e5cff96686776b0e03baf23923e3c1927b770`)
-  - Copy the following binaries into this project’s root:
-    - `build/N64Recomp`
-    - `build/RSPRecomp`
-
-- Run recompilation steps:
-  ```bash
-  ./N64Recomp drmario64.us.toml
-  ./RSPRecomp aspMain.us.toml
+See [BUILDING.md](BUILDING.md) for instructions on building for Linux.
